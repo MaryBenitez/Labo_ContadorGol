@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maris.labo_contadorgol.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp">
+        <RelativeLayout
+            android:id="@+id/padre_eqA"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/id_eqA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EQUIPO A"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/id_eqA_cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="80sp"
+                android:textColor="#000"
+                android:layout_below="@id/id_eqA"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:id="@+id/gol_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GOL"
+                android:textSize="20sp"
+                android:background="#4797F8"
+                android:textColor="#ffffff"
+                android:layout_below="@id/id_eqA_cont"
+                android:layout_centerHorizontal="true"
+                android:onClick="puntajeA"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/padre_eqB"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:id="@+id/id_eqB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EQUIPO B"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/id_eqB_cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="80sp"
+                android:textColor="#000"
+                android:layout_below="@id/id_eqB"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:id="@+id/gol_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GOL"
+                android:textSize="20sp"
+                android:layout_below="@id/id_eqB_cont"
+                android:layout_centerHorizontal="true"
+                android:background="#5CB867"
+                android:textColor="#ffffff"
+                android:onClick="puntajeB"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:text="Reiniciar"
+        android:textSize="15sp"
+        android:onClick="reset"
+        android:textColor="#ffffff"
+        android:background="#757575" />
+
+
+
+</LinearLayout>
